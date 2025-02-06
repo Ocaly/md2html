@@ -6,6 +6,8 @@ Example taken from: https://www.markdownguide.org/cheat-sheet/
 ##### h5 Webpage header
 ###### h6 Webpage header
 
+![test](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUQAEes_I3l5DImu8Y2N7pjTlAmSSPBfpvgA&s)
+
 **bold text**
 
 *italic text*
@@ -20,18 +22,10 @@ Example taken from: https://www.markdownguide.org/cheat-sheet/
 
 `code text`
 
----
-
-***
-
-___
-
 [weblink](https://www.example.com)
 <https://www.example.com>
 [filelink](https://www.example.com)
 [filelink](https://www.example.com)
-
-![image](./example.jpg)
 
 ```json
 {
@@ -43,22 +37,25 @@ ___
 
 ~~Striking through like lightning~~
 
+I need to highlight these ==very important words==.
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+---
+
+***
+
+___
+
+# Obscure or hard to implement:
+
 - [ ] Finish this TODO list.
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-
-I need to highlight these ==very important words==.
-
-
-
-
-# Obscure or hard to implement:
-#### Table:
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
 
 Here's a sentence with a footnote. [^1]
 

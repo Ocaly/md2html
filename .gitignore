@@ -1,3 +1,7 @@
 wasmbuild
 *.swp
 *.o
+
+# input/*
+tests/*.html
+

@@ -1,11 +1,18 @@
-SRC = $(shell find ./src/ -type f -regex '.*\.c')
-CFLAGS=-g -Wall -Wextra
+SINGLE_IN = ./tests/single.md
+SINGLE_OUT = $(SINGLE_IN:%.md=%.html)
 
-all:
-	cc $(CFLAGS) -o wasmbuild $(SRC)
+MULTIPLE_IN = $(shell find ./tests/multiple_md -type f -regex '.*\.md')
+MULTIPLE_OUT = $(MULTIPLE_IN:%.md=%.html)
+
+%.html: %.md
+	php md2html.php $< $@
+
+all: $(SINGLE_OUT) $(MULTIPLE_OUT)
+
 clean:
-	rm -f wasmbuild
+	rm -f $(SINGLE_OUT)
+	rm -f $(MULTIPLE_OUT)
 
 re: clean all
 
-.PHONY: all clean re
+.PHONY: multiple single all clean re fclean fre
