@@ -1,4 +1,4 @@
-<?php require './lib/parsedown/Parsedown.php';
+<?php require 'lib/parsedown/Parsedown.php';
 if ($argc != 3) die("Usage: php ". $argv[0] ." <inputfile> <outputfile>\n");
 if (pathinfo($argv[1])['extension'] !== 'md') {
 	die("input needs to be Markdown(.md)\n");

@@ -1,10 +1,12 @@
 ### Prerequisites
 - php
 - make
-- GNU find (for building tests/examples)
+- GNU find (recursively find *.md files)
 
-Usage: `php md2html.php <inputfile> <outputfile>`
+Usage:  `php md2html.php <inputfile> <outputfile>`
+Or:     `php rec_md2html.php <inputdir> <outputdir>`
 
-Build tests: `make all` or `make re`. To remove tests: `make clean`
+Build tests:    `make all` or `make re`
+Remove tests:   `make clean`
 
 ### built on: [erusev/parsedown](https://github.com/erusev/parsedown)
